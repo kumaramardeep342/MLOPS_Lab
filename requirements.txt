@@ -1,0 +1,5 @@
+# requirements.txt
+# Data visualization dependencies
+plotly>=6.1.1
+kaleido==1.2.0
+Prophet
