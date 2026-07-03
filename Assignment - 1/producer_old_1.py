@@ -53,9 +53,9 @@ def build_record(sensor_id: int, ts: datetime, last_record: dict | None):
 
 def main():
     parser = argparse.ArgumentParser(description="Kafka sensor data producer")
-    parser.add_argument("--topic", default="sensor_da25m502", help="Kafka topic, e.g. sensor_21f1234567")
-    parser.add_argument("--bootstrap-servers", default="kafka:29092")
-    parser.add_argument("--records", type=int, default=5000, help="Total records to publish")
+    parser.add_argument("--topic", required=True, help="Kafka topic, e.g. sensor_21f1234567")
+    parser.add_argument("--bootstrap-servers", default="localhost:9092")
+    parser.add_argument("--records", type=int, default=2000, help="Total records to publish")
     parser.add_argument("--rate", type=float, default=50.0, help="Target records/sec")
     parser.add_argument("--metrics-out", default="reports/producer_metrics.json")
     args = parser.parse_args()
