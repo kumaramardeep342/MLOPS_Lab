@@ -1,0 +1,602 @@
+[
+    {
+        "batch_id": 0,
+        "input_rate_rps": 0.0,
+        "processing_rate_rps": 0.69,
+        "batch_duration_ms": 7279
+    },
+    {
+        "batch_id": 0,
+        "input_rate_rps": 0.0,
+        "processing_rate_rps": 0.62,
+        "batch_duration_ms": 9679
+    },
+    {
+        "batch_id": 1,
+        "input_rate_rps": 40.77,
+        "processing_rate_rps": 118.39,
+        "batch_duration_ms": 2534
+    },
+    {
+        "batch_id": 1,
+        "input_rate_rps": 41.2,
+        "processing_rate_rps": 182.03,
+        "batch_duration_ms": 2192
+    },
+    {
+        "batch_id": 2,
+        "input_rate_rps": 45.83,
+        "processing_rate_rps": 54.24,
+        "batch_duration_ms": 2157
+    },
+    {
+        "batch_id": 2,
+        "input_rate_rps": 46.03,
+        "processing_rate_rps": 50.65,
+        "batch_duration_ms": 1994
+    },
+    {
+        "batch_id": 3,
+        "input_rate_rps": 45.85,
+        "processing_rate_rps": 49.5,
+        "batch_duration_ms": 1997
+    },
+    {
+        "batch_id": 3,
+        "input_rate_rps": 44.59,
+        "processing_rate_rps": 43.73,
+        "batch_duration_ms": 2035
+    },
+    {
+        "batch_id": 4,
+        "input_rate_rps": 44.43,
+        "processing_rate_rps": 46.55,
+        "batch_duration_ms": 1912
+    },
+    {
+        "batch_id": 4,
+        "input_rate_rps": 44.61,
+        "processing_rate_rps": 55.49,
+        "batch_duration_ms": 1640
+    },
+    {
+        "batch_id": 5,
+        "input_rate_rps": 45.45,
+        "processing_rate_rps": 44.82,
+        "batch_duration_ms": 1941
+    },
+    {
+        "batch_id": 5,
+        "input_rate_rps": 46.89,
+        "processing_rate_rps": 29.81,
+        "batch_duration_ms": 2583
+    },
+    {
+        "batch_id": 6,
+        "input_rate_rps": 45.29,
+        "processing_rate_rps": 33.11,
+        "batch_duration_ms": 2658
+    },
+    {
+        "batch_id": 6,
+        "input_rate_rps": 43.34,
+        "processing_rate_rps": 70.98,
+        "batch_duration_ms": 1578
+    },
+    {
+        "batch_id": 7,
+        "input_rate_rps": 44.0,
+        "processing_rate_rps": 72.85,
+        "batch_duration_ms": 1606
+    },
+    {
+        "batch_id": 7,
+        "input_rate_rps": 45.54,
+        "processing_rate_rps": 28.07,
+        "batch_duration_ms": 2565
+    },
+    {
+        "batch_id": 8,
+        "input_rate_rps": 45.43,
+        "processing_rate_rps": 23.08,
+        "batch_duration_ms": 3163
+    },
+    {
+        "batch_id": 8,
+        "input_rate_rps": 40.51,
+        "processing_rate_rps": 47.49,
+        "batch_duration_ms": 2190
+    },
+    {
+        "batch_id": 9,
+        "input_rate_rps": 39.48,
+        "processing_rate_rps": 52.61,
+        "batch_duration_ms": 2376
+    },
+    {
+        "batch_id": 9,
+        "input_rate_rps": 41.06,
+        "processing_rate_rps": 37.47,
+        "batch_duration_ms": 2402
+    },
+    {
+        "batch_id": 10,
+        "input_rate_rps": 42.38,
+        "processing_rate_rps": 39.38,
+        "batch_duration_ms": 2565
+    },
+    {
+        "batch_id": 10,
+        "input_rate_rps": 43.59,
+        "processing_rate_rps": 47.17,
+        "batch_duration_ms": 2226
+    },
+    {
+        "batch_id": 11,
+        "input_rate_rps": 42.07,
+        "processing_rate_rps": 64.75,
+        "batch_duration_ms": 1668
+    },
+    {
+        "batch_id": 11,
+        "input_rate_rps": 41.7,
+        "processing_rate_rps": 57.59,
+        "batch_duration_ms": 1615
+    },
+    {
+        "batch_id": 12,
+        "input_rate_rps": 46.03,
+        "processing_rate_rps": 55.64,
+        "batch_duration_ms": 1384
+    },
+    {
+        "batch_id": 12,
+        "input_rate_rps": 46.38,
+        "processing_rate_rps": 55.39,
+        "batch_duration_ms": 1354
+    },
+    {
+        "batch_id": 13,
+        "input_rate_rps": 46.93,
+        "processing_rate_rps": 46.43,
+        "batch_duration_ms": 1400
+    },
+    {
+        "batch_id": 13,
+        "input_rate_rps": 46.46,
+        "processing_rate_rps": 46.74,
+        "batch_duration_ms": 1348
+    },
+    {
+        "batch_id": 14,
+        "input_rate_rps": 44.94,
+        "processing_rate_rps": 51.22,
+        "batch_duration_ms": 1230
+    },
+    {
+        "batch_id": 14,
+        "input_rate_rps": 44.48,
+        "processing_rate_rps": 44.44,
+        "batch_duration_ms": 1350
+    },
+    {
+        "batch_id": 15,
+        "input_rate_rps": 46.3,
+        "processing_rate_rps": 40.48,
+        "batch_duration_ms": 1408
+    },
+    {
+        "batch_id": 15,
+        "input_rate_rps": 45.89,
+        "processing_rate_rps": 41.25,
+        "batch_duration_ms": 1503
+    },
+    {
+        "batch_id": 16,
+        "input_rate_rps": 45.97,
+        "processing_rate_rps": 42.15,
+        "batch_duration_ms": 1542
+    },
+    {
+        "batch_id": 16,
+        "input_rate_rps": 46.54,
+        "processing_rate_rps": 52.43,
+        "batch_duration_ms": 1335
+    },
+    {
+        "batch_id": 17,
+        "input_rate_rps": 45.31,
+        "processing_rate_rps": 49.3,
+        "batch_duration_ms": 1420
+    },
+    {
+        "batch_id": 17,
+        "input_rate_rps": 44.88,
+        "processing_rate_rps": 42.89,
+        "batch_duration_ms": 1399
+    },
+    {
+        "batch_id": 18,
+        "input_rate_rps": 45.74,
+        "processing_rate_rps": 40.07,
+        "batch_duration_ms": 1622
+    },
+    {
+        "batch_id": 18,
+        "input_rate_rps": 45.71,
+        "processing_rate_rps": 40.18,
+        "batch_duration_ms": 1593
+    },
+    {
+        "batch_id": 19,
+        "input_rate_rps": 44.33,
+        "processing_rate_rps": 49.28,
+        "batch_duration_ms": 1461
+    },
+    {
+        "batch_id": 19,
+        "input_rate_rps": 44.49,
+        "processing_rate_rps": 60.17,
+        "batch_duration_ms": 1180
+    },
+    {
+        "batch_id": 20,
+        "input_rate_rps": 45.7,
+        "processing_rate_rps": 48.59,
+        "batch_duration_ms": 1379
+    },
+    {
+        "batch_id": 20,
+        "input_rate_rps": 46.57,
+        "processing_rate_rps": 43.31,
+        "batch_duration_ms": 1270
+    },
+    {
+        "batch_id": 21,
+        "input_rate_rps": 46.24,
+        "processing_rate_rps": 38.76,
+        "batch_duration_ms": 1522
+    },
+    {
+        "batch_id": 21,
+        "input_rate_rps": 46.28,
+        "processing_rate_rps": 36.32,
+        "batch_duration_ms": 1762
+    },
+    {
+        "batch_id": 22,
+        "input_rate_rps": 45.87,
+        "processing_rate_rps": 60.19,
+        "batch_duration_ms": 1163
+    },
+    {
+        "batch_id": 22,
+        "input_rate_rps": 45.94,
+        "processing_rate_rps": 47.42,
+        "batch_duration_ms": 1708
+    },
+    {
+        "batch_id": 23,
+        "input_rate_rps": 45.49,
+        "processing_rate_rps": 34.46,
+        "batch_duration_ms": 1538
+    },
+    {
+        "batch_id": 23,
+        "input_rate_rps": 44.44,
+        "processing_rate_rps": 49.13,
+        "batch_duration_ms": 1547
+    },
+    {
+        "batch_id": 24,
+        "input_rate_rps": 44.13,
+        "processing_rate_rps": 59.34,
+        "batch_duration_ms": 1146
+    },
+    {
+        "batch_id": 24,
+        "input_rate_rps": 45.87,
+        "processing_rate_rps": 53.02,
+        "batch_duration_ms": 1339
+    },
+    {
+        "batch_id": 25,
+        "input_rate_rps": 47.0,
+        "processing_rate_rps": 43.48,
+        "batch_duration_ms": 1242
+    },
+    {
+        "batch_id": 25,
+        "input_rate_rps": 47.01,
+        "processing_rate_rps": 46.6,
+        "batch_duration_ms": 1352
+    },
+    {
+        "batch_id": 26,
+        "input_rate_rps": 46.66,
+        "processing_rate_rps": 46.22,
+        "batch_duration_ms": 1254
+    },
+    {
+        "batch_id": 26,
+        "input_rate_rps": 45.62,
+        "processing_rate_rps": 56.41,
+        "batch_duration_ms": 1099
+    },
+    {
+        "batch_id": 27,
+        "input_rate_rps": 46.18,
+        "processing_rate_rps": 52.82,
+        "batch_duration_ms": 1098
+    },
+    {
+        "batch_id": 27,
+        "input_rate_rps": 47.23,
+        "processing_rate_rps": 39.16,
+        "batch_duration_ms": 1328
+    },
+    {
+        "batch_id": 28,
+        "input_rate_rps": 45.5,
+        "processing_rate_rps": 44.76,
+        "batch_duration_ms": 1117
+    },
+    {
+        "batch_id": 28,
+        "input_rate_rps": 46.65,
+        "processing_rate_rps": 47.58,
+        "batch_duration_ms": 1303
+    },
+    {
+        "batch_id": 29,
+        "input_rate_rps": 47.32,
+        "processing_rate_rps": 38.6,
+        "batch_duration_ms": 1373
+    },
+    {
+        "batch_id": 29,
+        "input_rate_rps": 45.94,
+        "processing_rate_rps": 42.8,
+        "batch_duration_ms": 1402
+    },
+    {
+        "batch_id": 30,
+        "input_rate_rps": 46.48,
+        "processing_rate_rps": 49.0,
+        "batch_duration_ms": 1306
+    },
+    {
+        "batch_id": 30,
+        "input_rate_rps": 46.26,
+        "processing_rate_rps": 42.4,
+        "batch_duration_ms": 1533
+    },
+    {
+        "batch_id": 31,
+        "input_rate_rps": 45.73,
+        "processing_rate_rps": 38.51,
+        "batch_duration_ms": 1558
+    },
+    {
+        "batch_id": 31,
+        "input_rate_rps": 44.95,
+        "processing_rate_rps": 62.44,
+        "batch_duration_ms": 1104
+    },
+    {
+        "batch_id": 32,
+        "input_rate_rps": 45.51,
+        "processing_rate_rps": 54.53,
+        "batch_duration_ms": 1302
+    },
+    {
+        "batch_id": 32,
+        "input_rate_rps": 45.99,
+        "processing_rate_rps": 32.71,
+        "batch_duration_ms": 1559
+    },
+    {
+        "batch_id": 33,
+        "input_rate_rps": 45.28,
+        "processing_rate_rps": 39.33,
+        "batch_duration_ms": 1500
+    },
+    {
+        "batch_id": 33,
+        "input_rate_rps": 45.43,
+        "processing_rate_rps": 53.3,
+        "batch_duration_ms": 1332
+    },
+    {
+        "batch_id": 34,
+        "input_rate_rps": 45.24,
+        "processing_rate_rps": 56.29,
+        "batch_duration_ms": 1208
+    },
+    {
+        "batch_id": 34,
+        "input_rate_rps": 45.01,
+        "processing_rate_rps": 47.24,
+        "batch_duration_ms": 1270
+    },
+    {
+        "batch_id": 35,
+        "input_rate_rps": 45.49,
+        "processing_rate_rps": 44.25,
+        "batch_duration_ms": 1243
+    },
+    {
+        "batch_id": 35,
+        "input_rate_rps": 46.42,
+        "processing_rate_rps": 51.39,
+        "batch_duration_ms": 1148
+    },
+    {
+        "batch_id": 36,
+        "input_rate_rps": 46.62,
+        "processing_rate_rps": 48.95,
+        "batch_duration_ms": 1185
+    },
+    {
+        "batch_id": 36,
+        "input_rate_rps": 46.83,
+        "processing_rate_rps": 32.81,
+        "batch_duration_ms": 1646
+    },
+    {
+        "batch_id": 37,
+        "input_rate_rps": 47.1,
+        "processing_rate_rps": 35.07,
+        "batch_duration_ms": 1597
+    },
+    {
+        "batch_id": 38,
+        "input_rate_rps": 46.31,
+        "processing_rate_rps": 43.81,
+        "batch_duration_ms": 1689
+    },
+    {
+        "batch_id": 37,
+        "input_rate_rps": 46.75,
+        "processing_rate_rps": 41.69,
+        "batch_duration_ms": 1847
+    },
+    {
+        "batch_id": 39,
+        "input_rate_rps": 44.35,
+        "processing_rate_rps": 57.78,
+        "batch_duration_ms": 1298
+    },
+    {
+        "batch_id": 38,
+        "input_rate_rps": 44.37,
+        "processing_rate_rps": 61.93,
+        "batch_duration_ms": 1324
+    },
+    {
+        "batch_id": 40,
+        "input_rate_rps": 45.42,
+        "processing_rate_rps": 48.44,
+        "batch_duration_ms": 1218
+    },
+    {
+        "batch_id": 39,
+        "input_rate_rps": 46.04,
+        "processing_rate_rps": 36.46,
+        "batch_duration_ms": 1673
+    },
+    {
+        "batch_id": 41,
+        "input_rate_rps": 45.94,
+        "processing_rate_rps": 44.91,
+        "batch_duration_ms": 1247
+    },
+    {
+        "batch_id": 40,
+        "input_rate_rps": 44.7,
+        "processing_rate_rps": 68.68,
+        "batch_duration_ms": 1092
+    },
+    {
+        "batch_id": 42,
+        "input_rate_rps": 44.8,
+        "processing_rate_rps": 47.95,
+        "batch_duration_ms": 1168
+    },
+    {
+        "batch_id": 41,
+        "input_rate_rps": 45.75,
+        "processing_rate_rps": 29.29,
+        "batch_duration_ms": 1706
+    },
+    {
+        "batch_id": 43,
+        "input_rate_rps": 46.04,
+        "processing_rate_rps": 36.56,
+        "batch_duration_ms": 1477
+    },
+    {
+        "batch_id": 42,
+        "input_rate_rps": 44.42,
+        "processing_rate_rps": 58.37,
+        "batch_duration_ms": 1302
+    },
+    {
+        "batch_id": 44,
+        "input_rate_rps": 42.63,
+        "processing_rate_rps": 51.3,
+        "batch_duration_ms": 1228
+    },
+    {
+        "batch_id": 43,
+        "input_rate_rps": 43.58,
+        "processing_rate_rps": 41.91,
+        "batch_duration_ms": 1360
+    },
+    {
+        "batch_id": 45,
+        "input_rate_rps": 44.75,
+        "processing_rate_rps": 40.77,
+        "batch_duration_ms": 1349
+    },
+    {
+        "batch_id": 44,
+        "input_rate_rps": 46.15,
+        "processing_rate_rps": 38.32,
+        "batch_duration_ms": 1644
+    },
+    {
+        "batch_id": 46,
+        "input_rate_rps": 46.67,
+        "processing_rate_rps": 40.57,
+        "batch_duration_ms": 1553
+    },
+    {
+        "batch_id": 45,
+        "input_rate_rps": 45.59,
+        "processing_rate_rps": 41.99,
+        "batch_duration_ms": 1786
+    },
+    {
+        "batch_id": 47,
+        "input_rate_rps": 45.05,
+        "processing_rate_rps": 37.41,
+        "batch_duration_ms": 1871
+    },
+    {
+        "batch_id": 46,
+        "input_rate_rps": 43.09,
+        "processing_rate_rps": 45.92,
+        "batch_duration_ms": 1677
+    },
+    {
+        "batch_id": 48,
+        "input_rate_rps": 42.64,
+        "processing_rate_rps": 47.45,
+        "batch_duration_ms": 1686
+    },
+    {
+        "batch_id": 47,
+        "input_rate_rps": 43.5,
+        "processing_rate_rps": 38.95,
+        "batch_duration_ms": 1873
+    },
+    {
+        "batch_id": 49,
+        "input_rate_rps": 38.53,
+        "processing_rate_rps": 38.46,
+        "batch_duration_ms": 1690
+    },
+    {
+        "batch_id": 48,
+        "input_rate_rps": 3.73,
+        "processing_rate_rps": 4.4,
+        "batch_duration_ms": 1591
+    },
+    {
+        "batch_id": 50,
+        "input_rate_rps": 0.0,
+        "processing_rate_rps": 0.0,
+        "batch_duration_ms": 1971
+    }
+]

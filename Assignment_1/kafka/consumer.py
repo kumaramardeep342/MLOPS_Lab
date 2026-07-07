@@ -56,7 +56,7 @@ def main():
         
     elapsed = time.time() - start
     throughput = total / elapsed if elapsed else 0
-    print("\n====== METRICS ======")
+    print("\n" + "="*25 + " CONSUMER METRICS REPORT " + "="*25)
     print(f"Records consumed : {total}")
     print(f"Elapsed seconds  : {elapsed:.2f}")
     print(f"Throughput       : {throughput:.2f} records/sec")
