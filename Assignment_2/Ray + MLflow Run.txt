@@ -1,0 +1,411 @@
+(mlops_learning_project) sjagkoo7@DESKTOP-91C1HV8:~/projects/MLOPS_Lab/Assignment_2$ python train_da25m502.py
+2026-07-21 18:44:01,361 INFO worker.py:2024 -- Started a local Ray instance.
+Loading data partitions...
+2026/07/21 18:44:09 INFO mlflow.tracking.fluent: Experiment with name 'assignment_2_da25m502' does not exist. Creating a new experiment.
+Beginning 10 Hyperparameter Tuning Trials via Ray Tune...
+2026-07-21 18:44:09,954 INFO tensorboardx.py:43 -- pip install "ray[tune]" to see TensorBoard files.
+2026-07-21 18:44:09,954 WARNING callback.py:132 -- The TensorboardX logger cannot be instantiated because either TensorboardX or one of it's dependencies is not installed. Please make sure you have the latest version of TensorboardX installed: `pip install -U tensorboardx`
+╭──────────────────────────────────────────────────────────────────────────╮
+│ Configuration for experiment     train_evaluate_lr_2026-07-21_18-44-09   │
+├──────────────────────────────────────────────────────────────────────────┤
+│ Search algorithm                 BasicVariantGenerator                   │
+│ Scheduler                        FIFOScheduler                           │
+│ Number of trials                 10                                      │
+╰──────────────────────────────────────────────────────────────────────────╯
+
+View detailed results here: /home/sjagkoo7/ray_results/train_evaluate_lr_2026-07-21_18-44-09
+
+Trial status: 10 PENDING
+Current time: 2026-07-21 18:44:10. Total running time: 0s
+Logical resource usage: 1.0/1 CPUs, 0/0 GPUs
+╭──────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                      status             C   penalty     solver       max_iter │
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_evaluate_lr_29199_00000   PENDING    3.58379     l2          lbfgs              50 │
+│ train_evaluate_lr_29199_00001   PENDING    0.0258368   l2          lbfgs              50 │
+│ train_evaluate_lr_29199_00002   PENDING    1.03525     l2          lbfgs              20 │
+│ train_evaluate_lr_29199_00003   PENDING    0.0837697   l2          lbfgs              50 │
+│ train_evaluate_lr_29199_00004   PENDING    0.458772    l2          lbfgs              50 │
+│ train_evaluate_lr_29199_00005   PENDING    4.26228     l2          lbfgs              30 │
+│ train_evaluate_lr_29199_00006   PENDING    7.35538     l2          lbfgs              50 │
+│ train_evaluate_lr_29199_00007   PENDING    0.0769137   l2          lbfgs              20 │
+│ train_evaluate_lr_29199_00008   PENDING    3.41451     l2          lbfgs              20 │
+│ train_evaluate_lr_29199_00009   PENDING    0.0107596   l2          lbfgs              30 │
+╰──────────────────────────────────────────────────────────────────────────────────────────╯
+
+Trial train_evaluate_lr_29199_00000 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00000 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              3.58379 │
+│ max_iter                                            50 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial train_evaluate_lr_29199_00000 completed after 1 iterations at 2026-07-21 18:44:29. Total running time: 20s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00000 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           12.59661 │
+│ time_total_s                                               12.59661 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51203 │
+│ mlflow_run_id                                  ...384c1c47e275def1d │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1313) 2026/07/21 18:44:29 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+(train_evaluate_lr pid=1313) 🏃 View run unequaled-bee-51 at: http://localhost:5000/#/experiments/978723382330837962/runs/a10d324b8161435384c1c47e275def1d
+(train_evaluate_lr pid=1313) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962
+(train_evaluate_lr pid=1313) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1313) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962
+
+Trial train_evaluate_lr_29199_00001 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00001 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              0.02584 │
+│ max_iter                                            50 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial status: 1 TERMINATED | 1 RUNNING | 8 PENDING
+Current time: 2026-07-21 18:44:40. Total running time: 30s
+Logical resource usage: 1.0/1 CPUs, 0/0 GPUs
+Current best trial: 29199_00000 with f1_score=0.5120335316387237 and params={'C': 3.5837867720396055, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 50}
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                      status               C   penalty     solver       max_iter     iter     total time (s) f1_score │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_evaluate_lr_29199_00001   RUNNING      0.0258368   l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00000   TERMINATED   3.58379     l2          lbfgs              50        1            12.5966 0.512034 │
+│ train_evaluate_lr_29199_00002   PENDING      1.03525     l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00003   PENDING      0.0837697   l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00004   PENDING      0.458772    l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00005   PENDING      4.26228     l2          lbfgs              30          │
+│ train_evaluate_lr_29199_00006   PENDING      7.35538     l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00007   PENDING      0.0769137   l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00008   PENDING      3.41451     l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00009   PENDING      0.0107596   l2          lbfgs              30          │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1360) 2026/07/21 18:44:43 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+
+Trial train_evaluate_lr_29199_00001 completed after 1 iterations at 2026-07-21 18:44:43. Total running time: 34s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00001 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.10414 │
+│ time_total_s                                               10.10414 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51167 │
+│ mlflow_run_id                                  ...cba50f4053bdb143d │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1360) 🏃 View run useful-lark-975 at: http://localhost:5000/#/experiments/978723382330837962/runs/2d300e1ffd6c472cba50f4053bdb143d
+(train_evaluate_lr pid=1360) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)
+(train_evaluate_lr pid=1360) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+
+Trial train_evaluate_lr_29199_00002 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00002 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              1.03525 │
+│ max_iter                                            20 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial train_evaluate_lr_29199_00002 completed after 1 iterations at 2026-07-21 18:44:58. Total running time: 48s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00002 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.35058 │
+│ time_total_s                                               10.35058 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51198 │
+│ mlflow_run_id                                  ...9bb20e5f0a349e212 │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1403) 2026/07/21 18:44:57 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+(train_evaluate_lr pid=1403) 🏃 View run useful-cat-626 at: http://localhost:5000/#/experiments/978723382330837962/runs/610f2cc31b244eb9bb20e5f0a349e212
+(train_evaluate_lr pid=1403) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1403) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00003 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00003 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              0.08377 │
+│ max_iter                                            50 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial status: 3 TERMINATED | 1 RUNNING | 6 PENDING
+Current time: 2026-07-21 18:45:10. Total running time: 1min 0s
+Logical resource usage: 1.0/1 CPUs, 0/0 GPUs
+Current best trial: 29199_00000 with f1_score=0.5120335316387237 and params={'C': 3.5837867720396055, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 50}
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                      status               C   penalty     solver       max_iter     iter     total time (s) f1_score │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_evaluate_lr_29199_00003   RUNNING      0.0837697   l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00000   TERMINATED   3.58379     l2          lbfgs              50        1            12.5966 0.512034 │
+│ train_evaluate_lr_29199_00001   TERMINATED   0.0258368   l2          lbfgs              50        1            10.1041 0.511669 │
+│ train_evaluate_lr_29199_00002   TERMINATED   1.03525     l2          lbfgs              20        1            10.3506 0.511983 │
+│ train_evaluate_lr_29199_00004   PENDING      0.458772    l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00005   PENDING      4.26228     l2          lbfgs              30          │
+│ train_evaluate_lr_29199_00006   PENDING      7.35538     l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00007   PENDING      0.0769137   l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00008   PENDING      3.41451     l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00009   PENDING      0.0107596   l2          lbfgs              30          │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1448) 2026/07/21 18:45:12 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+
+Trial train_evaluate_lr_29199_00003 completed after 1 iterations at 2026-07-21 18:45:12. Total running time: 1min 2s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00003 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.50987 │
+│ time_total_s                                               10.50987 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51185 │
+│ mlflow_run_id                                  ...09505355341467b35 │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1448) 🏃 View run bouncy-owl-337 at: http://localhost:5000/#/experiments/978723382330837962/runs/bdf93ca4d3db46609505355341467b35
+(train_evaluate_lr pid=1448) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1448) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00004 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00004 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              0.45877 │
+│ max_iter                                            50 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial train_evaluate_lr_29199_00004 completed after 1 iterations at 2026-07-21 18:45:26. Total running time: 1min 16s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00004 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.64479 │
+│ time_total_s                                               10.64479 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51198 │
+│ mlflow_run_id                                  ...0835efac2c11b591a │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1492) 2026/07/21 18:45:26 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+(train_evaluate_lr pid=1492) 🏃 View run bright-stoat-746 at: http://localhost:5000/#/experiments/978723382330837962/runs/0816494a270a4660835efac2c11b591a
+(train_evaluate_lr pid=1492) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1492) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00005 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00005 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              4.26228 │
+│ max_iter                                            30 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial status: 5 TERMINATED | 1 RUNNING | 4 PENDING
+Current time: 2026-07-21 18:45:40. Total running time: 1min 30s
+Logical resource usage: 1.0/1 CPUs, 0/0 GPUs
+Current best trial: 29199_00000 with f1_score=0.5120335316387237 and params={'C': 3.5837867720396055, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 50}
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                      status               C   penalty     solver       max_iter     iter     total time (s) f1_score │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_evaluate_lr_29199_00005   RUNNING      4.26228     l2          lbfgs              30          │
+│ train_evaluate_lr_29199_00000   TERMINATED   3.58379     l2          lbfgs              50        1            12.5966 0.512034 │
+│ train_evaluate_lr_29199_00001   TERMINATED   0.0258368   l2          lbfgs              50        1            10.1041 0.511669 │
+│ train_evaluate_lr_29199_00002   TERMINATED   1.03525     l2          lbfgs              20        1            10.3506 0.511983 │
+│ train_evaluate_lr_29199_00003   TERMINATED   0.0837697   l2          lbfgs              50        1            10.5099 0.51185  │
+│ train_evaluate_lr_29199_00004   TERMINATED   0.458772    l2          lbfgs              50        1            10.6448 0.511983 │
+│ train_evaluate_lr_29199_00006   PENDING      7.35538     l2          lbfgs              50          │
+│ train_evaluate_lr_29199_00007   PENDING      0.0769137   l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00008   PENDING      3.41451     l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00009   PENDING      0.0107596   l2          lbfgs              30          │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1535) 2026/07/21 18:45:41 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+
+Trial train_evaluate_lr_29199_00005 completed after 1 iterations at 2026-07-21 18:45:41. Total running time: 1min 31s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00005 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           11.28854 │
+│ time_total_s                                               11.28854 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51203 │
+│ mlflow_run_id                                  ...5bbaf743911730a8c │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1535) 🏃 View run unique-crane-10 at: http://localhost:5000/#/experiments/978723382330837962/runs/91c70508291c40c5bbaf743911730a8c
+(train_evaluate_lr pid=1535) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1535) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00006 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00006 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              7.35538 │
+│ max_iter                                            50 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1622) 2026/07/21 18:45:55 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+(train_evaluate_lr pid=1622) 🏃 View run debonair-wasp-890 at: http://localhost:5000/#/experiments/978723382330837962/runs/2f4e7c653f7849f58caf1e0500500406
+(train_evaluate_lr pid=1622) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1622) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00006 completed after 1 iterations at 2026-07-21 18:45:55. Total running time: 1min 45s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00006 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.89745 │
+│ time_total_s                                               10.89745 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51203 │
+│ mlflow_run_id                                  ...58caf1e0500500406 │
+╰─────────────────────────────────────────────────────────────────────╯
+
+Trial train_evaluate_lr_29199_00007 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00007 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              0.07691 │
+│ max_iter                                            20 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial status: 7 TERMINATED | 1 RUNNING | 2 PENDING
+Current time: 2026-07-21 18:46:10. Total running time: 2min 0s
+Logical resource usage: 1.0/1 CPUs, 0/0 GPUs
+Current best trial: 29199_00000 with f1_score=0.5120335316387237 and params={'C': 3.5837867720396055, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 50}
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                      status               C   penalty     solver       max_iter     iter     total time (s) f1_score │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_evaluate_lr_29199_00007   RUNNING      0.0769137   l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00000   TERMINATED   3.58379     l2          lbfgs              50        1            12.5966 0.512034 │
+│ train_evaluate_lr_29199_00001   TERMINATED   0.0258368   l2          lbfgs              50        1            10.1041 0.511669 │
+│ train_evaluate_lr_29199_00002   TERMINATED   1.03525     l2          lbfgs              20        1            10.3506 0.511983 │
+│ train_evaluate_lr_29199_00003   TERMINATED   0.0837697   l2          lbfgs              50        1            10.5099 0.51185  │
+│ train_evaluate_lr_29199_00004   TERMINATED   0.458772    l2          lbfgs              50        1            10.6448 0.511983 │
+│ train_evaluate_lr_29199_00005   TERMINATED   4.26228     l2          lbfgs              30        1            11.2885 0.512034 │
+│ train_evaluate_lr_29199_00006   TERMINATED   7.35538     l2          lbfgs              50        1            10.8975 0.512034 │
+│ train_evaluate_lr_29199_00008   PENDING      3.41451     l2          lbfgs              20          │
+│ train_evaluate_lr_29199_00009   PENDING      0.0107596   l2          lbfgs              30          │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1665) 2026/07/21 18:46:10 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+
+Trial train_evaluate_lr_29199_00007 completed after 1 iterations at 2026-07-21 18:46:10. Total running time: 2min 1s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00007 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.96109 │
+│ time_total_s                                               10.96109 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51187 │
+│ mlflow_run_id                                  ...c819d63874fa7239b │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1665) 🏃 View run lyrical-newt-986 at: http://localhost:5000/#/experiments/978723382330837962/runs/45f77f07416140fc819d63874fa7239b
+(train_evaluate_lr pid=1665) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1665) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00008 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00008 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              3.41451 │
+│ max_iter                                            20 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1709) 2026/07/21 18:46:25 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+
+Trial train_evaluate_lr_29199_00008 completed after 1 iterations at 2026-07-21 18:46:25. Total running time: 2min 15s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00008 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.78501 │
+│ time_total_s                                               10.78501 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51203 │
+│ mlflow_run_id                                  ...185cccc58ec18013e │
+╰─────────────────────────────────────────────────────────────────────╯
+(train_evaluate_lr pid=1709) 🏃 View run beautiful-boar-270 at: http://localhost:5000/#/experiments/978723382330837962/runs/b7c544e1d7e546c185cccc58ec18013e
+(train_evaluate_lr pid=1709) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1709) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+
+Trial train_evaluate_lr_29199_00009 started with configuration:
+╭────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00009 config             │
+├────────────────────────────────────────────────────────┤
+│ C                                              0.01076 │
+│ max_iter                                            30 │
+│ penalty                                             l2 │
+│ solver                                           lbfgs │
+╰────────────────────────────────────────────────────────╯
+
+Trial train_evaluate_lr_29199_00009 completed after 1 iterations at 2026-07-21 18:46:40. Total running time: 2min 30s
+╭─────────────────────────────────────────────────────────────────────╮
+│ Trial train_evaluate_lr_29199_00009 result                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                                 │
+│ time_this_iter_s                                           10.72637 │
+│ time_total_s                                               10.72637 │
+│ training_iteration                                                1 │
+│ f1_score                                                    0.51134 │
+│ mlflow_run_id                                  ...59b88f36cbdeba1ef │
+╰─────────────────────────────────────────────────────────────────────╯
+2026-07-21 18:46:40,080 INFO tune.py:1007 -- Wrote the latest version of all result files and experiment state to '/home/sjagkoo7/ray_results/train_evaluate_lr_2026-07-21_18-44-09' in 0.0056s.
+
+Trial status: 10 TERMINATED
+Current time: 2026-07-21 18:46:40. Total running time: 2min 30s
+Logical resource usage: 1.0/1 CPUs, 0/0 GPUs
+Current best trial: 29199_00000 with f1_score=0.5120335316387237 and params={'C': 3.5837867720396055, 'penalty': 'l2', 'solver': 'lbfgs', 'max_iter': 50}
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                      status               C   penalty     solver       max_iter     iter     total time (s) f1_score │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_evaluate_lr_29199_00000   TERMINATED   3.58379     l2          lbfgs              50        1            12.5966 0.512034 │
+│ train_evaluate_lr_29199_00001   TERMINATED   0.0258368   l2          lbfgs              50        1            10.1041 0.511669 │
+│ train_evaluate_lr_29199_00002   TERMINATED   1.03525     l2          lbfgs              20        1            10.3506 0.511983 │
+│ train_evaluate_lr_29199_00003   TERMINATED   0.0837697   l2          lbfgs              50        1            10.5099 0.51185  │
+│ train_evaluate_lr_29199_00004   TERMINATED   0.458772    l2          lbfgs              50        1            10.6448 0.511983 │
+│ train_evaluate_lr_29199_00005   TERMINATED   4.26228     l2          lbfgs              30        1            11.2885 0.512034 │
+│ train_evaluate_lr_29199_00006   TERMINATED   7.35538     l2          lbfgs              50        1            10.8975 0.512034 │
+│ train_evaluate_lr_29199_00007   TERMINATED   0.0769137   l2          lbfgs              20        1            10.9611 0.511867 │
+│ train_evaluate_lr_29199_00008   TERMINATED   3.41451     l2          lbfgs              20        1            10.785 0.512034 │
+│ train_evaluate_lr_29199_00009   TERMINATED   0.0107596   l2          lbfgs              30        1            10.7264 0.511338 │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+(train_evaluate_lr pid=1752) 2026/07/21 18:46:40 WARNING mlflow.utils.environment: Failed to resolve installed pip version.``pip`` will be added to conda.yaml environment spec without a version specifier.
+(train_evaluate_lr pid=1752) 🏃 View run whimsical-donkey-143 at: http://localhost:5000/#/experiments/978723382330837962/runs/56249cc453ae43459b88f36cbdeba1ef
+(train_evaluate_lr pid=1752) 🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+(train_evaluate_lr pid=1752) 🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962 [repeated 2x across cluster]
+🏃 View run ray_tune_orchestrator at: http://localhost:5000/#/experiments/978723382330837962/runs/c5ceb4d5542e4b648c36ef84d394e7ef
+🧪 View experiment at: http://localhost:5000/#/experiments/978723382330837962
+
+Tuning Complete!
+Highest Validation F1-Score: 0.51203
+
+Registering the top model from Run ID (a10d324b8161435384c1c47e275def1d) in Model Registry...
+Successfully registered model 'Assignment2Classifier_da25m502'.
+2026/07/21 18:46:40 WARNING mlflow.tracking._model_registry.fluent: Run with id a10d324b8161435384c1c47e275def1d has no artifacts at artifact path 'model', registering model based on models:/m-b5fdecc63b2140faabd5d92434f59c33 instead
+2026/07/21 18:46:40 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: Assignment2Classifier_da25m502, version 1
+Created version '1' of model 'Assignment2Classifier_da25m502'.
+Model successfully registered under name: 'Assignment2Classifier_da25m502' as Version 1.
+
+Loading 'Assignment2Classifier_da25m502' version: 1 for verification...
+Downloading artifacts: 100%|██████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 92.81it/s]
+Loading processed test dataset...
+Executing batch inference predictions on transformed test features...
+Success! Inference dataset generated and saved to: /home/sjagkoo7/projects/MLOPS_Lab/Assignment_2/data/predictions_da25m502.csv
+(mlops_learning_project) sjagkoo7@DESKTOP-91C1HV8:~/projects/MLOPS_Lab/Assignment_2$
